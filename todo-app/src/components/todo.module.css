@@ -11,6 +11,8 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
     transform: scale(1);
+    z-index: 1;
+
 }
 
 .todo:hover {

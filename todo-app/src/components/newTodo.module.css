@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     border-block-end: 2px solid #183B4E;
+    z-index: 2;
 }
 
 .inputDiv {
