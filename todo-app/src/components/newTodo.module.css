@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.form {
+    max-width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-block-end: 2px solid #183B4E;
+}
+
+.inputDiv {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.formLabel {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 10px;
+    color: #3D365C;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.formLabel.active {
+    font-size: 1.1rem;
+}
+
+.formLabel:hover {
+    color: #000000;
+}
+
+.formLabelDescription {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 10px;
+    color: #3D365C;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.formLabelDescription.active {
+    transform: translateX(-35%);
+    font-size: 1.1rem;
+}
+
+.formLabelDescription:hover {
+    color: #000000;
+}
+
+.formInput {
+    border: 1px solid #183B4E;
+    background: transparent;
+    padding: 10px 20px;
+    width: 30%;
+    outline: none;
+    position: absolute;
+    width: max-content;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, -23%);
+    opacity: 0;
+    transform-origin: left;
+    transition: 0.3s ease-in-out;
+    font-family: "Italianno", cursive;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.formInput.active {
+    width: 70%;
+    opacity: 1;
+    height: 20px;
+    transform: translate(100%, 5%);
+
+}
+
+.formInput::placeholder {
+    color: #3D365C;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: "Italianno", cursive;
+    letter-spacing: 2px;
+}
+
+.formInputTextArea {
+    opacity: 0;
+    border: 1px solid #183B4E;
+    background: transparent;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: -2.5rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 7.5%);
+    font-family: "Italianno", cursive;
+    font-size: 1.1rem;
+}
+
+.formInputTextArea.active {
+    opacity: 1;
+    letter-spacing: 2px;
+}
+
+.formInputTextArea::placeholder {
+    color: #3D365C;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: "Italianno", cursive;
+    letter-spacing: 2px;
+}
+
+
+.btnWrapper {
+    display: inline-block;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    width: 18%;
+    height: 50px;
+
+    /* Shadow goes here */
+
+}
+
+.submitBtn {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #441752;
+    border: none;
+    font-size: 1.3rem;
+    color: #9B7EBD;
+    font-weight: 600;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 70%);
+    position: relative;
+    overflow: visible;
+    visibility: visible;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: "Italianno", cursive;
+    letter-spacing: 4px;
+    transform-origin: left;
+    transform: translate(-20%, 1%);
+}
+
+.submitBtn:hover {
+    letter-spacing: 2px;
+    transform: translateX(0);
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
+
+
+
+/* 
+
+*/

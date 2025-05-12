@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, #9B7EBD 5%, #F49BAB 60%, #FFE1E0 99%);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoHeader {
+    background: linear-gradient(to right, #7F55B1 20%, #183B4E 95%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 900;
+}
