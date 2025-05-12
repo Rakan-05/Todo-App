@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -7,7 +7,14 @@ import NewTodo from "./NewTodo";
 import style from "./todos.module.css";
 
 const Todos = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const saved = localStorage.getItem("todos");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
   const handleAddTodo = (todo) => {
     setTodos((previousTodo) => {
       return [...previousTodo, { id: uuidv4(), todo }];
